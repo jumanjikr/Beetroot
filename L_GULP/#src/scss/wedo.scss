@@ -1,0 +1,45 @@
+#wedo {
+    padding-top: 80px;
+}
+.spain {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 700px;
+    padding: 0 8%;
+    padding-bottom: 100px;
+}
+
+.spain.one {
+    background: url("../img/bg/spainone_bg.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+.spain_box {
+    background: rgba(42, 39, 41, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 540px;
+    height: 45%;
+    padding: 3%;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+}
+.spain_box h3 {
+    text-transform: uppercase;
+}
+.spain_box p {
+    line-height: 1.5;
+}
+
+.spain.two {
+    background: url("../img/bg/spaintwo_bg.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+.spain_two {
+    align-self: flex-end;
+}

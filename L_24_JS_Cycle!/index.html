@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width   , initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>L_24_Java_script_03</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>L_24_Java_script_03_Cycle</p>
+
+      <!-- 1 -->
+      <div class="task1">
+        <span
+          >1. Подсчитать сумму всех чисел в заданном пользователем диапазоне:
+        </span>
+        <button onclick="getSum()">Посчитать</button> <br />
+        <span id="task1"></span>
+      </div>
+
+      <!-- 2 -->
+      <div class="task2">
+        <span
+          >2. Запросить 2 числа и найти только наибольший общий делитель:</span
+        >
+        <button onclick="getDivider()">Ввести число</button>
+        <br />
+        <span id="task2"></span>
+      </div>
+
+      <!-- 3 -->
+      <div class="task3">
+        <span>
+          3. Запросить у пользователя число и вывести все делители этого числа:
+        </span>
+        <button onclick="getNumbers()">Ввести число</button>
+        <br />
+        <span id="task3"></span>
+      </div>
+
+      <!-- 4 -->
+      <div class="task4">
+        <span>
+          4. Определить количество цифр в введенном числе:
+        </span>
+        <button onclick="calcNumbers()">Ввести число</button>
+        <br />
+        <span id="task4"></span>
+      </div>
+
+      <!-- 5 -->
+      <div class="task5">
+        <span>
+          5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел
+          положительных, отрицательных и нулей. <br />
+          При этом также посчитать, сколько четных и нечетных. <br />
+          Вывести статистику на экран. <br />
+          Учтите, что достаточно одной переменной (не 10) для ввода чисел
+          пользователем:
+        </span>
+        <button onclick="getTenNmbers()">Введите число</button>
+        <br />
+        <span id="task5"></span>
+      </div>
+
+      <!-- 6 -->
+      <div class="task6">
+        <span>
+          6. Зациклить калькулятор. <br />
+          Запросить у пользователя 2 числа и знак, решить пример, вывести
+          результат и спросить, хочет ли он решить еще один пример. И так до тех
+          пор, пока пользователь не откажется.:
+        </span>
+        <button onclick="getCalc()">Введите число</button>
+        <br />
+        <span id="task6"></span>
+      </div>
+
+      <!-- 7 -->
+      <div class="task7">
+        <span>
+          7. Запросить у пользователя число и на сколько цифр его сдвинуть.
+          Сдвинуть цифры числа и вывести результат (если число 123456 сдвинуть
+          на 2 цифры, то получится 345612):
+        </span>
+        <button onclick="moveNumber()">Введите данные</button>
+        <br />
+        <span id="task7"></span>
+      </div>
+
+      <!-- 8 -->
+      <div class="task8">
+        <span>
+          8. Зациклить вывод дней недели таким образом: <br />
+          «День недели. Хотите увидеть следующий день?» <br />
+          и так до тех пор, пока пользователь нажимает OK:
+        </span>
+        <button onclick="getDay()">Поехали</button>
+        <br />
+        <span id="task8"></span>
+      </div>
+
+      <!-- 9 -->
+      <div class="task9">
+        <span>
+          9. Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число
+          необходимо умножить на числа от 1 до 10:
+        </span>
+        <button onclick="multiplication()">Вывести таблицу умножения</button>
+
+        <br />
+        <span id="task9"></span>
+      </div>
+
+      <!-- 10 -->
+      <div class="task10">
+        <span>
+          10. Игра «Угадай число». Предложить пользователю загадать число от 0
+          до 100 и отгадать его следующим способом: каждую итерацию цикла делите
+          диапазон чисел пополам, записываете результат в N и спрашиваете у
+          пользователя «Ваше число > N, < N или == N?». В зависимости от того,
+          что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0
+          до 100, поделили пополам и получили 50. Если пользователь указал, что
+          его число > 50, то изменили диапазон на от 51 до 100. И так до тех
+          пор, пока пользователь не выберет == N.:
+        </span>
+
+        <span>Загадайте и запомните число от 1 до 100</span>
+        <button id="btn-game">Отгадать | Новая игра</button>
+
+        <span id="try" style="display: none;">Вы загадали <span></span></span>
+        <span id="guess" style="display: none;">
+          <button id="btn-ok">Да, это число <span></span></button>
+          <button id="btn-left">число меньше <span></span></button>
+          <button id="btn-right">число больше <span></span></button>
+        </span>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

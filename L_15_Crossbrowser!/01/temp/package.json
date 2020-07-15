@@ -1,0 +1,21 @@
+{
+  "name": "test_gulp",
+  "version": "1.0.0",
+  "description": "Test gulp configuration",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
+}

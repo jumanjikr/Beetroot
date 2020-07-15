@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>L_29_JS_DOM</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <p>L_29_Java_script_08_DOM</p>
+      <!-- 1 -->
+      <div class="task1">
+        <span
+          >1. Создать страницу, которая выводит нумерованный список песен:
+        </span>
+        <button onclick="task1()">Вывести список</button>
+        <br /><br />
+        <span id="task1"></span>
+      </div>
+
+      <br />
+      <!-- 2 -->
+      <div class="task2">
+        <span>
+          2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На
+          модальном окне должен быть текст и кнопка "Закрыть". Изначально
+          модальное окно не отображается. При клике на кнопку "Открыть"
+          появляется модальное окно, на кнопку "Закрыть" – исчезает.
+        </span>
+        <br />
+        <span id="task2"></span>
+      </div>
+
+      <br />
+      <!-- 3 -->
+      <div class="task3">
+        <span>
+          3. Создать HTML-страницу со светофором и кнопкой, которая переключает
+          светофор на следующий цвет.
+        </span>
+        <button id="task3">Включить светофор</button>
+        <br />
+        <div class="traffic__lights">
+          <span id="red" class="traffic__light traffic__red"></span>
+          <span id="yellow" class="traffic__light"></span>
+          <span id="green" class="traffic__light"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>

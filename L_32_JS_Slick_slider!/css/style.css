@@ -1,0 +1,268 @@
+ul li {
+  list-style-type: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1230px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 50px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.subtitle::-moz-selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.subtitle::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.title {
+  max-width: 90%;
+  margin-top: 0;
+  color: #000000;
+  font-size: 86px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+}
+
+.title::-moz-selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.title::selection {
+  background: #000000;
+  color: #ffffff;
+}
+
+.plus {
+  position: absolute;
+  top: 34px;
+  right: 17.39837%;
+}
+
+.triangle {
+  position: absolute;
+  top: 235px;
+  left: 40px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #32eaad;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay__text {
+  position: absolute;
+  opacity: 0;
+  bottom: 135px;
+  left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay__title {
+  font-size: 28px;
+  word-spacing: 10px;
+}
+
+.overlay__author {
+  font-size: 12px;
+}
+
+.slider__item {
+  cursor: pointer;
+  position: relative;
+  max-width: 440px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 22px;
+  outline: none;
+  -webkit-transition: 0.5s opacity linear;
+  -o-transition: 0.5s opacity linear;
+  transition: 0.5s opacity linear;
+}
+
+.slider__item img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__item:hover .overlay {
+  opacity: 0.8;
+}
+
+.slider__item:hover .overlay__text {
+  opacity: 1;
+  bottom: 35px;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-list {
+  margin-left: 135px;
+}
+
+.prev-pic {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 15px;
+  padding: 0;
+  display: block;
+}
+
+.next-pic {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  right: 15px;
+  padding: 0;
+  display: block;
+}
+
+@media screen and (max-width: 1650px) {
+  .slider__item {
+    max-width: 380px;
+    height: 300px;
+  }
+
+  .prev-pic img,
+  .next-pic img {
+    height: 76px;
+    width: 76px;
+  }
+
+  .slick-list {
+    margin-left: 105px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .title {
+    font-size: 70px;
+  }
+
+  .slider__item {
+    max-width: 300px;
+    height: 280px;
+  }
+
+  .prev-pic img,
+  .next-pic img {
+    height: 66px;
+    width: 66px;
+  }
+
+  .slick-list {
+    margin-left: 105px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .title {
+    max-width: 90%;
+    font-size: 50px;
+  }
+
+  .slick-list {
+    margin: 0 20px;
+  }
+
+  .slick-dots {
+    bottom: -50px;
+  }
+
+  .plus {
+    right: 5%;
+  }
+
+  .triangle {
+    top: 175px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .title {
+    max-width: 90%;
+    font-size: 36px;
+  }
+
+  .triangle {
+    left: 5%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .plus {
+    top: 44px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .triangle {
+    top: 145px;
+  }
+}

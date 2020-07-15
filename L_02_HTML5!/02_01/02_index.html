@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Список покупок</title>
+    <style>
+        .leftimg {
+            float: left;
+            margin: 0 50px 10px 20px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" width="100" class="leftimg" alt="">
+        <h1>Список покупок</h1>
+    </header>
+    <main class="clearfix">
+        <section>
+            <h3>Выбирете раздел для начала покупок:</h3>
+            <ul>
+                <li><a href="#bakaly">Бакалея</a></li>
+                <li><a href="#drink">Напитки</a></li>
+            </ul>
+            <!--не могу потять по поводу кнопки отправки файта, обязательный атрибут enctype, он вставляется в начало формы?-->
+            <form action="??" enctype="multipart/form-data" method="post" id="my_form"
+                onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+                <ol>
+                    <li>
+                        <h3 id="bakaly">Бакалея</h3>
+                        <p><input type="checkbox" id="bakaly1" value="1" name="baka[]"><label
+                                for="bakaly1">Крупа</label>
+                        </p>
+                        <p><input type="checkbox" id="bakaly2" value="2" name="bakal[]"><label
+                                for="bakaly2">Мука</label>
+                        </p>
+                        <p><input type="checkbox" id="bakaly3" value="3" name="bakal[]"><label
+                                for="bakaly3">Сахар</label>
+                        </p>
+                        <p><input type="checkbox" id="bakaly4" value="4" name="bakal[]"><label
+                                for="bakaly4">Соль</label>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>
+                            <label id="drink">Нипитки</label>
+                        </h3>
+                        <select multiple name="food[]">
+                            <optgroup label="Алкоголь">
+                                <option value="c1">Вино</option>
+                                <option value="c2">Пиво</option>
+                                <option value="c3">Ром</option>
+                            </optgroup>
+                            <optgroup label="Сок">
+                                <option value="s1">Банановый</option>
+                                <option value="s2">Апельсиновый</option>
+                                <option value="s3">Вишневый</option>
+                                <option hidden selected disabled>Выберите напиток</option>
+                            </optgroup>
+                        </select><br><br>
+                    </li>
+                </ol>
+                <p><b>Введите ваше пожелание:</b></p>
+                <p><textarea rows="10" cols="45" name="text"></textarea></p>
+                <input type="submit" value="Отправить заказ">
+                <input type="reset" value="Очистить">
+                <p><input type="file" multiple name="pictures[]">
+                    <input type="submit" value="Отправить"></p>
+                <button disabled>Неактивная кнопка</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

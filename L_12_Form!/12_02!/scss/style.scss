@@ -1,0 +1,69 @@
+@import "body";
+@import "forms";
+@import "js";
+@import "footer";
+
+.container {
+  position: relative;
+  max-width: 400px;
+  min-width: 262px;
+  flex-grow: 1;
+  height: 510px;
+  background-image: linear-gradient(58deg, rgb(48, 35, 174) 0%, rgb(124, 72, 195) 53%, rgb(200, 109, 215) 100%);
+  box-shadow: 2px 42px 28px -28px rgba(0, 0, 0, 0.83);
+  z-index: 1;
+
+  img {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+  }
+}
+
+.row {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+  width: 260px;
+
+  .actions {
+    position: absolute;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      margin: 0;
+    }
+    input[type="radio"] + label {
+      position: relative;
+      color: #fbf6e4;
+      font-family: Quicksand;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+
+    input[type="radio"] + label {
+      &::after {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: -50%;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #e66a64;
+        transition: width 1s ease;
+        transform: translate(50%);
+      }
+    }
+
+    input[type="radio"]:checked + label {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}

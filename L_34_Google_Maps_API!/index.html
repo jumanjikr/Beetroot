@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>L_34_Google_Maps_API</title>
+</head>
+
+<body>
+    <div id="map">
+    </div>
+    <div class="dirWrap">
+        <input type="text" id="start" placeholder="Starting Point" autocomplete="off">
+        <input type="text" id="end" placeholder="Destination" autocomplete="off">
+        <div class="options">
+            <select id="mode" onchange="calcRoute();">
+                <option value="DRIVING">Driving</option>
+                <option value="WALKING">Walking</option>
+                <option value="TRANSIT">Transit</option>
+            </select>
+        </div>
+        <button id="result" type="button" name="button">GO</button>
+    </div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaCQCfCWzhy4OEOzFJTAamFIv0dLUNsdY&callback=initMap&libraries=places"></script>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

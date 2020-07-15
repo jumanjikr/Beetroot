@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>L_31_JS_jQuery</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tabs-nav">
+        <div class="tabs-nav__header">
+          <ul class="tabs-nav__link-list">
+            <li>
+              <a
+                class="tabs-nav__link tabs-nav__link_tooltip active"
+                href="#information-tab"
+                >INFORMATION</a
+              >
+            </li>
+            <li>
+              <a class="tabs-nav__link tabs-nav__link_card" href="#rating-tab"
+                >RATINGS INFO</a
+              >
+            </li>
+            <li>
+              <a
+                class="tabs-nav__link tabs-nav__link_basket"
+                href="#where-to-buy-tab"
+                >WHERE TO BUY</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="tabs-nav__panel-holder">
+          <div class="tabs-nav__panel active" id="information-tab">
+            <div class="card">
+              <div class="card__photo-holder">
+                <figure>
+                  <picture
+                    ><source srcset="./img/Layer_38.webp" type="image/webp" />
+                    <img src="./img/Layer_38.png" alt="photo"
+                  /></picture>
+                </figure>
+                <div class="card__rating">
+                  <span class="card__star card__star_filled"></span>
+                  <span class="card__star card__star_filled"></span>
+                  <span class="card__star card__star_filled"></span>
+                  <span class="card__star card__star_filled"></span>
+                  <span class="card__star"></span>
+                </div>
+              </div>
+
+              <div class="card__info">
+                <div class="card__header">
+                  <div class="card__title-meta">
+                    <p class="card__title">FarCry 4</p>
+                    <p class="card__release">First Released Nov 17, 2014</p>
+                  </div>
+                  <div class="card__averange-rating">
+                    <svg class="progress-ring" width="120" height="120">
+                      <defs>
+                        <linearGradient
+                          id="gradient"
+                          x1="0%"
+                          y1="0%"
+                          x2="0%"
+                          y2="100%"
+                        >
+                          <stop offset="0%" stop-color="#00d4be" />
+                          <stop offset="100%" stop-color="#1ae77f" />
+                        </linearGradient>
+                      </defs>
+
+                      <circle
+                        class="progress-ring__circle"
+                        stroke="url(#gradient)"
+                        stroke-width="4"
+                        fill="transparent"
+                        r="52"
+                        cx="60"
+                        cy="60"
+                        style="
+                          stroke-dasharray: 326.726, 326.726;
+                          stroke-dashoffset: 100.8;
+                        "
+                      ></circle>
+                    </svg>
+                    <span class="card__averange-rating-value">7.8</span>
+                  </div>
+                </div>
+
+                <div class="card__description">
+                  In Far Cry 4, players find themselves in Kyrat, a
+                  breathtaking, perilous and wild region of the Hima layas
+                  struggling under the regime of a despotic self-appointed king.
+                </div>
+
+                <div class="card__action-holder">
+                  <div class="card__price">
+                    <div class="card__discount">20% OFF!</div>
+                    <div class="card__regular-price">$59.96</div>
+                  </div>
+
+                  <a href="#" class="card__btn btn-primary">BUY IT NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs-nav__panel" id="rating-tab">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+            voluptas unde ducimus tempora, optio nesciunt dolor! Aliquam velit
+            totam tenetur! Dolorem cumque tempore sapiente impedit qui corrupti
+            hic. Asperiores, porro. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Rerum minus deleniti explicabo aliquid sed vero
+            porro, deserunt quia tempore? Illum temporibus necessitatibus qui
+            neque repellendus eius error laudantium voluptas adipisci! Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Atque voluptates
+            praesentium delectus maxime nostrum quam dolor commodi vero nulla
+            tempore possimus ipsa necessitatibus quaerat voluptatem doloremque
+            adipisci quod, harum est!
+          </div>
+          <div class="tabs-nav__panel" id="where-to-buy-tab">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum minus
+            deleniti explicabo aliquid sed vero porro, deserunt quia tempore?
+            Illum temporibus necessitatibus qui neque repellendus eius error
+            laudantium voluptas adipisci! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Atque voluptates praesentium delectus
+            maxime nostrum quam dolor commodi vero nulla tempore possimus ipsa
+            necessitatibus quaerat voluptatem doloremque adipisci quod, harum
+            est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            minus deleniti explicabo aliquid sed vero porro, deserunt quia
+            tempore? Illum temporibus necessitatibus qui neque repellendus eius
+            error laudantium voluptas adipisci! Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Atque voluptates praesentium delectus
+            maxime nostrum quam dolor commodi vero nulla tempore possimus ipsa
+            necessitatibus quaerat voluptatem doloremque adipisci quod, harum
+            est!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.min.js"></script>
+  </body>
+</html>

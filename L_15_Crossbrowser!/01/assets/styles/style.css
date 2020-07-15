@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #9889f9a6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  height: 760px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 327px;
+  height: 611px;
+  background-color: #f5f4f9;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  margin: 20px;
+}
+
+.row:hover {
+  -webkit-box-shadow: 2px 4px 59px #7a6be7;
+          box-shadow: 2px 4px 59px #7a6be7;
+  width: 370px;
+  height: 690px;
+  cursor: pointer;
+}
+
+.row:hover .main__list {
+  margin-bottom: 40px;
+}
+
+.row:hover .footer__button {
+  top: -25px;
+  background-color: #fd8d7b;
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.row:hover .footer__text {
+  opacity: 1;
+  padding-top: 40px;
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.row:hover .popular:before {
+  opacity: 1;
+  -webkit-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.row:hover .popular:after {
+  opacity: 0.5;
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-duration: 0.9s;
+       -o-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+  right: -65px;
+  top: 10px;
+}
+
+.row:hover .popular__cercle::before, .row:hover .popular__cercle::after {
+  opacity: 1;
+  -webkit-transition-duration: 0.9s;
+       -o-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.row:hover .popular__cercle::after {
+  -webkit-transition-delay: 0.7s;
+       -o-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.row:hover .header__price:before, .row:hover .header__price:after {
+  opacity: 1;
+  -webkit-transition-duration: 0.9s;
+       -o-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.row:hover .header__price:after {
+  -webkit-transition-delay: 0.7s;
+       -o-transition-delay: 0.7s;
+          transition-delay: 0.7s;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 35px auto;
+  background: #f5f4f9;
+  color: #181818;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header__price {
+  position: relative;
+  font-family: "Bebas Neue - Thin";
+  font-size: 60px;
+  letter-spacing: 4.8px;
+}
+
+.header__price::before {
+  display: block;
+  content: "$";
+  position: absolute;
+  top: 10px;
+  left: -12px;
+  font-family: "Bebas Neue - Thin";
+  font-size: 24px;
+  letter-spacing: 1.92px;
+}
+
+.header__price span {
+  font-family: "Bebas Neue Light";
+  font-size: 16px;
+  letter-spacing: 1.28px;
+}
+
+.header p:last-child {
+  font-family: "Bebas Neue Regular";
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+  margin-top: 15px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border-top-left-radius: 50% 120px;
+  border-top-right-radius: 50% 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+}
+
+.main__list {
+  margin-top: 40px;
+}
+
+.main__list li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 53px;
+}
+
+.main .shapes-ti {
+  font-size: 30px;
+}
+
+.footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__text {
+  opacity: 0;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 53px;
+  color: #a9a9a9;
+}
+
+.footer__button {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 54px;
+  border-radius: 25px;
+  background-color: #6fcffb;
+  -webkit-box-shadow: 2px 4px 18px rgba(133, 192, 247, 0.31);
+          box-shadow: 2px 4px 18px rgba(133, 192, 247, 0.31);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 1.44px;
+  text-align: center;
+}
+
+.popular {
+  position: relative;
+}
+
+.popular__cercle::before {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 180px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.popular__cercle::after {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 200px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.popular::before {
+  display: block;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 40px;
+  content: "P";
+  color: #ffffff;
+  font-family: "Bebas Neue Regular";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 46px;
+  height: 46px;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.popular::after {
+  display: block;
+  position: absolute;
+  top: 50px;
+  content: "popular";
+  background: url(../images/popular.svg);
+  width: 101px;
+  height: 30px;
+  font-family: "Bebas Neue Regular";
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.28px;
+  line-height: 1.9;
+  text-align: center;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  transition: top 1s ease;
+}
+
+@media screen and (max-width: 760px) {
+  .row:hover .popular:after {
+    -webkit-transform-origin: 20% 100%;
+        -ms-transform-origin: 20% 100%;
+            transform-origin: 20% 100%;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 50px;
+    right: -3px;
+  }
+  .popular::after {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0px;
+    right: -70px;
+    -webkit-transition: top, right, -webkit-transform;
+    transition: top, right, -webkit-transform;
+    -o-transition: transform, top, right;
+    transition: transform, top, right;
+    transition: transform, top, right, -webkit-transform;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

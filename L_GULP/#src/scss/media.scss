@@ -1,0 +1,124 @@
+@media screen and (max-width: 1100px) {
+    .choose_us-img2 {
+        padding: 0;
+    }
+    .header_title form {
+        width: 90%;
+        justify-content: center;
+    }
+    .feedback_text {
+        margin-top: 25px;
+        width: 80%;
+        p {
+            padding-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo_nav {
+        padding: 5px;
+    }
+    nav {
+        margin: 0 0 0 auto;
+        padding: 0;
+    }
+    .choose_us,
+    .feedback {
+        padding-top: 80px;
+    }
+
+    .choose_us li:nth-child(1) {
+        margin: 50px 0;
+    }
+
+    .choose_us li {
+        width: 90%;
+        align-items: center;
+    }
+    .choose_us li:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+    .choose_us img {
+        width: calc(100% - 5px);
+    }
+    .choose_us-img2 {
+        padding: 0 0 20px 0;
+    }
+    .choose_us-img {
+        margin: 0;
+    }
+    .far.fa-thumbs-up::after {
+        display: none;
+    }
+
+    .icons-line {
+        display: none;
+    }
+    .icons ul {
+        margin: 30px 0;
+    }
+    .icons p {
+        font-size: 18px;
+    }
+    .icons i {
+        font-size: 36px;
+    }
+
+    .spain_box {
+        width: 95%;
+    }
+    .feedback_picture {
+        width: 100%;
+    }
+    .feedback_title {
+        padding: 50px 0;
+    }
+    .feedback_text {
+        margin-top: 20px;
+        width: 94%;
+        align-items: center;
+    }
+    .feedback_text h2 {
+        padding: 30px;
+    }
+    footer {
+        height: 100%;
+        padding-top: 30px;
+    }
+    .button {
+        margin: 0;
+    }
+    .header_title-button {
+        margin-right: 5px;
+        font-size: 0px;
+        svg {
+            padding: 0;
+            height: 35px;
+            width: 35px;
+        }
+    }
+    .choose_buttons {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 590px) {
+    .logo_nav {
+        font-size: 12px;
+    }
+    .logo_nav a {
+        margin: 0 5px;
+    }
+    .header_title-title {
+        font-size: 36px;
+    }
+    .header_title-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 390px) {
+    .logo_nav {
+        font-size: 8px;
+    }
+}

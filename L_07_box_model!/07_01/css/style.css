@@ -1,0 +1,98 @@
+.container {
+  width: 960px;
+  max-width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.column {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.column.col-1 {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: rgb(137, 143, 153);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 160px;
+}
+
+.column.col-2 {
+  font-size: 48px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(14, 200, 203);
+  text-transform: uppercase;
+  line-height: 0.625;
+  margin-top: 35px;
+}
+
+.column.col-3 {
+  font-size: 18px;
+  font-family: "PTSans";
+  color: rgb(153, 153, 153);
+  text-transform: uppercase;
+  line-height: 1.667;
+  margin-top: 45px;
+}
+
+.conteiner-2 {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: calc(100%-10px);
+  height: 420px;
+  /* border: solid; */
+  margin-top: 110px;
+  text-align: center;
+}
+.conteiner-2 img {
+  padding-top: 55px;
+}
+.conteiner-2 svg {
+  padding-top: 55px;
+}
+.con1 {
+  /* border: solid; */
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.conteiner-2 .p-title {
+  font-size: 21px;
+  font-family: "Montserrat";
+  color: rgb(27, 27, 27);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-top: 55px;
+}
+
+.conteiner-2 .p-text {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(119, 119, 119);
+  line-height: 1.571;
+  padding-top: 35px;
+}
+
+.container.con-1 {
+  width: 25%;
+}
+
+.con1:hover,
+.con1:hover p {
+  background-color: rgb(14, 200, 203);
+  color: #ffffff;
+  fill: rgb(255, 255, 255);
+}

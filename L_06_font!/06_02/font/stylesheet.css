@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.eot');
+    src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff'),
+        url('PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Regular.eot');
+    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Regular.woff2') format('woff2'),
+        url('ProximaNova-Regular.woff') format('woff'),
+        url('ProximaNova-Regular.ttf') format('truetype'),
+        url('ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('FuturaPT-Heavy.eot');
+    src: url('FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPT-Heavy.woff2') format('woff2'),
+        url('FuturaPT-Heavy.woff') format('woff'),
+        url('FuturaPT-Heavy.ttf') format('truetype'),
+        url('FuturaPT-Heavy.svg#FuturaPT-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia-BoldItalic.eot');
+	src: local('Georgia Bold Italic'), local('Georgia-BoldItalic'),
+		url('Georgia-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-BoldItalic.woff') format('woff'),
+		url('Georgia-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia-Italic.eot');
+	src: local('Georgia Italic'), local('Georgia-Italic'),
+		url('Georgia-Italic.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-Italic.woff') format('woff'),
+		url('Georgia-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia-Bold.eot');
+	src: local('Georgia Bold'), local('Georgia-Bold'),
+		url('Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Georgia-Bold.woff') format('woff'),
+		url('Georgia-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('Georgia.eot');
+	src: local('Georgia'),
+		url('Georgia.eot?#iefix') format('embedded-opentype'),
+		url('Georgia.woff') format('woff'),
+		url('Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

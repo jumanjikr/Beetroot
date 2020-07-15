@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/images/background.png" alt="background" />
+      <div class="row">
+        <div class="actions">
+          <input
+            type="radio"
+            class="js-radiosing"
+            name="radio_but"
+            id="sing_in"
+            checked
+          /><label for="sing_in">Sing in</label>
+          <input
+            type="radio"
+            class="js-radiojoin"
+            name="radio_but"
+            id="join_us"
+          /><label for="join_us">Join us</label>
+        </div>
+        <div class="forms">
+          <form class="js-singin" method="GET" action="">
+            <div class="form_user_name">
+              <label for="user_name">Username</label>
+              <input
+                type="text"
+                id="user_name"
+                name="user_name"
+                minlength="3"
+                maxlength="20"
+                pattern="[A-Za-z]{3,20}"
+                required
+              />
+            </div>
+            <div class="form_user_name">
+              <label for="user_password">Password</label>
+              <input
+                type="password"
+                id="user_password"
+                name="user_password"
+                title="Inter min 8 max 20 simbol"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+            </div>
+            <div class="form_checkbox">
+              <input
+                type="checkbox"
+                id="user_check"
+                name="user_check"
+                checked
+              />
+              <label for="user_check">Keep me signed in</label>
+            </div>
+            <button type="submit">Sign in</button>
+          </form>
+
+          <form class="js-joinus joinus disabled" method="GET" action="">
+            <div class="form_user_name">
+              <label for="user_name2">Username</label>
+              <input
+                type="text"
+                id="user_name2"
+                name="user_name"
+                minlength="3"
+                maxlength="20"
+                pattern="[A-Za-z]{3,20}"
+                required
+              />
+            </div>
+            <div class="form_user_name">
+              <label for="user_password2">Password</label>
+              <input
+                type="password"
+                id="user_password2"
+                name="user_password"
+                title="Inter min 8 max 20 simbol"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+            </div>
+            <div class="form_user_name">
+              <label for="user_password3">Password</label>
+              <input
+                type="password"
+                id="user_password3"
+                name="user_password"
+                title="Inter min 8 max 20 simbol"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+            </div>
+            <button type="submit" id="submit">Join Us</button>
+          </form>
+        </div>
+        <footer>
+          <ul>
+            <li><a href="">Forgot password</a></li>
+            <li><a id="create_account" href="#">Create an account</a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

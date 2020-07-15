@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <title>BHROMAON</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+
+  <body>
+    @@include('_header.html')
+    <div id="sticky" class="sticky-element">
+      <div class="sticky-anchor"></div>
+      <div class="sticky-content">
+        <div class="logo_nav" id="menu">
+          <div class="logo">
+            <h1>
+              <a href="#top"><p>Bhromaon</p></a>
+            </h1>
+          </div>
+          <nav>
+            <a href="#choose">Who we are</a>
+            <a href="#wedo">What we do</a>
+            <a href="#withus">Travel with us</a>
+            <a href="#contact">Contact us</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <main>
+      @@include('_choose_us.html') @@include('_icons.html')
+      @@include('_wedo.html') @@include('_withus.html')
+    </main>
+    @@include('_footer.html')
+  </body>
+</html>

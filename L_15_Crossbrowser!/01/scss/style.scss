@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: 760px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  position: relative;
+  width: 327px;
+  height: 611px;
+  background-color: $bg-row;
+  transition-duration: 0.2s;
+  margin: 20px;
+
+  &:hover {
+    box-shadow: 2px 4px 59px #7a6be7;
+    width: 370px;
+    height: 690px;
+    cursor: pointer;
+  }
+
+  &:hover .main__list {
+    margin-bottom: 40px;
+  }
+
+  &:hover .footer__button {
+    top: -25px;
+    background-color: $act_but;
+    transition-duration: 0.7s;
+  }
+
+  &:hover .footer__text {
+    opacity: 1;
+    padding-top: 40px;
+    transition-duration: 0.7s;
+    transition-delay: 0.1s;
+  }
+
+  &:hover .popular {
+    &:before {
+      opacity: 1;
+      transition-duration: 0.7s;
+      transition-delay: 0.2s;
+    }
+    &:after {
+      opacity: 0.5;
+      transition-delay: 0.5s;
+      transition-duration: 0.9s;
+      right: -65px;
+      top: 10px;
+    }
+    &__cercle {
+      &::before,
+      &::after {
+        opacity: 1;
+        transition-duration: 0.9s;
+        transition-delay: 0.3s;
+      }
+      &::after {
+        transition-delay: 0.7s;
+      }
+    }
+  }
+  &:hover .header__price {
+    &:before,
+    &:after {
+      opacity: 1;
+      transition-duration: 0.9s;
+      transition-delay: 0.3s;
+    }
+    &:after {
+      transition-delay: 0.7s;
+    }
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px auto;
+
+  background: $bg-header;
+  color: $text-color;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  &__price {
+    position: relative;
+    font-family: "Bebas Neue - Thin";
+    font-size: 60px;
+
+    letter-spacing: 4.8px;
+
+    &::before {
+      display: block;
+      content: "$";
+      position: absolute;
+      top: 10px;
+      left: -12px;
+      font-family: "Bebas Neue - Thin";
+      font-size: 24px;
+      letter-spacing: 1.92px;
+    }
+    span {
+      font-family: "Bebas Neue Light";
+      font-size: 16px;
+      letter-spacing: 1.28px;
+    }
+  }
+  p {
+    &:last-child {
+      font-family: "Bebas Neue Regular";
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.96px;
+      margin-top: 15px;
+    }
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $bg-main;
+  border-top-left-radius: 50% 120px;
+  border-top-right-radius: 50% 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+
+  &__list {
+    margin-top: 40px;
+
+    li {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 53px;
+    }
+  }
+  .shapes-ti {
+    font-size: 30px;
+  }
+}
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    opacity: 0;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 53px;
+    color: $footer-text;
+  }
+
+  &__button {
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 54px;
+    border-radius: 25px;
+    background-color: $no_act_but;
+    box-shadow: 2px 4px 18px rgba(133, 192, 247, 0.31);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 1.44px;
+    text-align: center;
+  }
+}
+
+.popular {
+  position: relative;
+
+  &__cercle {
+    &::before {
+      display: block;
+      position: absolute;
+      top: -10px;
+      left: 180px;
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: $popular_circle;
+      border-radius: 50%;
+      opacity: 0;
+    }
+    &::after {
+      display: block;
+      position: absolute;
+      top: -20px;
+      left: 200px;
+      content: "";
+      width: 5px;
+      height: 5px;
+      background-color: $popular_circle;
+      border-radius: 50%;
+      opacity: 0;
+    }
+  }
+  &::before {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    content: "P";
+    color: #ffffff;
+    font-family: "Bebas Neue Regular";
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 46px;
+    height: 46px;
+    background-color: $popular_circle;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    top: 50px;
+    content: "popular";
+    background: url(../images/popular.svg);
+    width: 101px;
+    height: 30px;
+    font-family: "Bebas Neue Regular";
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.28px;
+    line-height: 1.9;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    transition: top 1s ease;
+  }
+}
+@media screen and (max-width: 760px) {
+  .row {
+    &:hover .popular {
+      &:after {
+        transform-origin: 20% 100%;
+        transform: rotate(90deg);
+        top: 50px;
+        right: -3px;
+      }
+    }
+  }
+  .popular {
+    &::after {
+      transform: rotate(0deg);
+      top: 0px;
+      right: -70px;
+
+      transition: transform, top, right;
+    }
+  }
+}
